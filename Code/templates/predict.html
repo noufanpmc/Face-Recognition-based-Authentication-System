@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title> Prediction</title>
+    <head>
+        <link href="../static/css/main.css" rel="stylesheet">
+    </head>
+        <body>
+            <div class="container">
+             <header>
+                <img src="../static/css/unnamed.png" style="float:left">
+             </header>
+             <div style="width:40%; background-color:#fff; margin:0 auto; padding:10px 0px 20px 0px;" align="center">  
+                 <h1>Face Login</h1>
+                 <h3>Please click on button below to initiate face recognition</h3>
+                 <form action="{{url_for("initiate")}}"method=["POST","GET"]>
+                     <button type="submit"> Initiate </button>
+                 </form>
+            </div>
+        </body>
+</html>

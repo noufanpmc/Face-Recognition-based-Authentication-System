@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title> Face Recognition App</title>
+    <head>
+        <link href="../static/css/main.css" rel="stylesheet">
+    </head>
+
+        <body>
+            <div class="container">
+            <header>
+                <img src="../static/css/unnamed.png" style="float:left">
+            </header>  
+            <div style="width:40%; background-color:#fff; margin:0 auto; padding:10px 0px 20px 0px;" align="center">
+                 <h1>Face Authentication</h1>
+                 <h3>Kindly enter user id and click on capture button</h3>
+                     <form  action="" method="post">
+                        <input id = "number_one" type="text" name="comment.form_id">
+                        <input type="submit" value = "Capture">
+                     </form>
+                     
+                     
+                 <h3>Press the train button to train model</h3>
+                     <form name="UserID" action="{{url_for("train")}}" method=["GET,POST"]>
+                        <input class="btn btn-primary" type="submit" value="Train">
+                     </form>   
+                    
+                 <h3>Press the Recognition button to recognize face</h3>
+                     <form name="UserID" action="{{url_for("predict")}}" method=["GET,POST"]>
+                        <input class="btn btn-primary" type="submit" value="Recognize">
+                     </form>     
+            </div>   
+            </div>
+        </body>
+</html>
+
+
